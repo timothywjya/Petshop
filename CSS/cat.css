@@ -1,0 +1,219 @@
+body {
+    background-color:aliceblue;
+    font-family: 'Poppins', sans-serif;
+    color:darkslateblue ;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    text-decoration:none;
+    display:none;
+    position:absolute;
+    margin-left:0px;
+    list-style:none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color:aqua;
+    border:none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 100px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+
+
+.section-products #product-1 .part-1::before {
+    background: url("https://s4.bukalapak.com/img/42591926692/s-330-330/c5e4ce549632a865ba240cea9be94906.jpg.webp") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://cdn.happyfresh.com/t/s_wide,c_fit/spree/images/attachments/e8f926507cb4a0d7997014843a91f69cf471f1ba-original.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1638163158/Products/10108031_1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://cf.shopee.co.id/file/310a7affe0435b65938b9f14e596b860") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//88/MTA-2828310/bolt-cat_bolt-cat-food-1kg-repack---makanan-kucing-bolt_full03.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://cf.shopee.co.id/file/803d3fcf6c2dcadd2b8cd1cfe4d489a2") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("https://cf.shopee.co.id/file/20c49b2bdc8408252e9c870531869b16") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//98/MTA-6353837/felibite_cat_makanan_kucing_felibite_ikan_donat_500_gr_full02_lv8a5wgy.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+.dropdown1{
+    position: absolute;
+    bottom: 450px;
+    left: 150px;
+}
+.dropdown1 .btn {
+    background-color: skyblue;
+}
+.dropdown1 .dropdown-item:hover {
+    display: block;
+    background-color:skyblue;
+    border:none;
+}
+
+.input-group{
+    position: absolute;
+    right: 50px;
+    width: 380px;
+    margin: 50px auto;
+    
+}
+
+.footer{
+    background:aqua;
+    text-align: center;
+    font-size: 14px;
+    color:black;
+}
+
+.pagination{
+    position: absolute;
+    bottom: -580px;
+    width: 200px;
+    right: 555px;
+}

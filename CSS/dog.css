@@ -1,0 +1,219 @@
+body {
+    background-color:aliceblue;
+    font-family: 'Poppins', sans-serif;
+    color:darkslateblue ;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    text-decoration:none;
+    display:none;
+    position:absolute;
+    margin-left:0px;
+    list-style:none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color:aqua;
+    border:none;
+}
+
+.footer{
+    background:aqua;
+    text-align: center;
+    font-size: 14px;
+    color:black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 100px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+
+
+.section-products #product-1 .part-1::before {
+    background: url("https://www.ubuy.co.id/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFEZWxJMUpIUkwuX0FDX1NMMTUwMF8uanBn.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://happydog_en_sb.cstatic.io/440x440/f/69110/480x480/c90b13149a/hd-vet-new-product-slider-packshots-sensible-11kg-300g.png") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://cdn.shopify.com/s/files/1/0272/4714/9155/products/healthy-pet-food-adult_large.jpg?v=1622095363") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCc-2JpxYf5eGNIPQtVk7w8EmaPM9JlTlTDg&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61jTba7TvJS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/10/f6f872e1-1857-43ec-a646-377171c11720.png") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("https://rpfskulibrary.imgix.net/media/sys_master/hbb/hd0/10814741872670.png?h=600&w=600&bg=0fff&auto=compress&fit=fillmax") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("https://images.tokopedia.net/img/cache/500-square/product-1/2019/5/21/5881559/5881559_3977df3b-aaa8-4b4e-9dc5-68fdb0e5729a.png") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+.dropdown1{
+    position: absolute;
+    bottom: 450px;
+    left: 150px;
+}
+.dropdown1 .btn {
+    background-color: skyblue;
+}
+.dropdown1 .dropdown-item:hover {
+    display: block;
+    background-color:skyblue;
+    border:none;
+}
+
+.input-group{
+    position: absolute;
+    right: 50px;
+    width: 380px;
+    margin: 50px auto;
+    
+}
+
+.pagination{
+    position: absolute;
+    bottom: -580px;
+    width: 200px;
+    right: 555px;
+}

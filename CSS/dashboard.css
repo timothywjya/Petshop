@@ -1,0 +1,121 @@
+
+.side-bar {
+	background-color:#663366;
+	backdrop-filter: blur(15px);
+	width: 250px;
+	height: 159vh;
+	position: static;
+	top: 0;
+	left: -250px;
+	overflow-y: auto;
+	transition: 0.6s ease;
+	transition-property: left;
+}
+
+.side-bar::-webkit-scrollbar {
+	width: 0px;
+}
+
+.side-bar .menu {
+	width: 100%;
+	margin-top: 7px;
+}
+
+.side-bar .menu .item {
+	position: relative;
+	cursor: pointer;
+}
+
+.side-bar .menu .item a {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	padding: 5px 30px;
+	line-height: 55px;
+}
+
+.side-bar .menu .item a:hover {
+	background:#FFFFFF;
+	color:#663366;
+	transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+	margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+	position: absolute;
+	right: 0;
+	margin: 20px;
+	transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+	background-color:#663366;
+	display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+	padding-left: 60px;
+}
+
+.side-bar .menu .item .sub-menu a:hover {
+	padding-left: 60px;
+}
+
+#sub_item {
+	padding-left: 100px;
+}
+
+.rotate {
+	transform: rotate(90deg);
+}
+
+.sidebar-heading {
+	background-color:#663366;
+	color:#FFFFFF;
+	margin-top: 7px;
+	text-align: center;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 17px;
+}
+
+@media (min-width: 768px) {
+	#page-content-wrapper {
+		min-width: 0;
+		width: 100%;
+	}
+}
+
+.fa-solid,  #user_icon {
+	color:#FFFFFF;
+}
+
+.fa-solid {
+	color:#663366;
+}
+
+#header {
+	background-color:#663366;
+	margin: 0px -1px;
+}
+
+.card {
+	margin: -0.5px -16px;
+	height: 150vh;
+}
+
+.active {
+	background-color:#FFFFFF;
+	
+}
+
+.active i, .active span {
+	color:#663366;
+}
+
+#admin_name {
+	color: #FFFFFF;
+}

@@ -1,0 +1,40 @@
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+td {
+    text-align: justify;
+}
+
+#btn1 {
+    background-color:#663366; 
+    border-color:#FFFFFF;
+    width: 90px;
+}
+
+#btn1:hover{
+    font-weight: bold;
+}
+
+#btn2 {
+    background-color:rgb(226, 43, 43); 
+    border-color:#FFFFFF;
+    width: 90px;
+}
+
+#btn2:hover {
+    background-color:#FFFFFF; 
+    border-color:rgb(226, 43, 43);
+    color:rgb(226, 43, 43);
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color:#663366; 
+    text-decoration: none;
+}
+a:hover{
+    color:#b41fb4; 
+}
+
